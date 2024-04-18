@@ -1939,18 +1939,6 @@
         <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#consentimiento_autorizado001"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#consentimiento_específico001"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#consentimiento_inequívoco001"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#consentimiento_informado001"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#consentimiento_libre001"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#consentimiento_no_autorizado001"/>
     </Declaration>
     <Declaration>
@@ -2005,10 +1993,16 @@
         <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#financial001"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#free_consent001"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#health_data001"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#holder001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#informed_consent001"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#infringements001"/>
@@ -2116,16 +2110,22 @@
         <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#sources_accessible_to_the_public001"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#specific_consent001"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#techniques001"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#teenagers001"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#transferencia_o_comunicación001"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#transfer_or_communication001"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#treatment001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#unequivocal_consent001"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#verification001"/>
@@ -3511,7 +3511,7 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Transfer_or_communication"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#transferencia_o_comunicación001"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#transfer_or_communication001"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Treatment_Manager_in_verification"/>
@@ -4003,26 +4003,6 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#can_be"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#consentimiento_específico001"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#consentimiento_específico001"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#can_be"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#consentimiento_inequívoco001"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#consentimiento_inequívoco001"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#can_be"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#consentimiento_informado001"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#consentimiento_informado001"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#can_be"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#consentimiento_libre001"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#consentimiento_libre001"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#can_be"/>
         <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#consentimiento_no_autorizado001"/>
         <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#consentimiento_no_autorizado001"/>
     </ObjectPropertyAssertion>
@@ -4112,6 +4092,11 @@
         <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#financial001"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#can_be"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#free_consent001"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#free_consent001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#that_can_be"/>
         <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#health_data001"/>
         <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#health_data001"/>
@@ -4120,6 +4105,11 @@
         <ObjectProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#is_compliant_with_the_following_roles"/>
         <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#holder001"/>
         <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#holder001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#can_be"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#informed_consent001"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#informed_consent001"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#the_verification_covers_aspects_such_as"/>
@@ -4159,7 +4149,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#has_elements_of_transfer_and_communication"/>
         <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#law001"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#transferencia_o_comunicación001"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#transfer_or_communication001"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#has_the_following_principles_to_consider"/>
@@ -4332,6 +4322,11 @@
         <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#sources_accessible_to_the_public001"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#can_be"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#specific_consent001"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#specific_consent001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#that_can_be_of_the_type"/>
         <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#techniques001"/>
         <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#techniques001"/>
@@ -4343,13 +4338,18 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#has_elements_of_transfer_and_communication"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#transferencia_o_comunicación001"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#transferencia_o_comunicación001"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#transfer_or_communication001"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#transfer_or_communication001"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#is_compliant_with_the_following_roles"/>
         <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#treatment001"/>
         <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#treatment001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#can_be"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#unequivocal_consent001"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#unequivocal_consent001"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#a_process_of"/>
@@ -5612,46 +5612,6 @@
         <Literal>consentimiento inequívo por parte del titular ante alguna acción</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Informed"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#consentimiento_específico001"/>
-        <Literal>Cuando se le pide algún consentimiento en específico al titular de los datos</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Not_informed"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#consentimiento_específico001"/>
-        <Literal>Cuando no se le pide algún consentimiento en específico al titular de los datos</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Informed"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#consentimiento_inequívoco001"/>
-        <Literal>Cuando se le pide algún consentimiento inequívoco al titular de los datos</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Not_informed"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#consentimiento_inequívoco001"/>
-        <Literal>Cuando no se le pide algún consentimiento inequívoco al titular de los datos</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Informed"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#consentimiento_informado001"/>
-        <Literal>Cuando se le informa al titular como se van a usar o transferir sus datos</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Not_informed"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#consentimiento_informado001"/>
-        <Literal>Cuando no se le informa al titular como se van a usar o transferir sus datos</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Informed"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#consentimiento_libre001"/>
-        <Literal>Cuando se comunica al titular de los datos sobre su uso o transferencia</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Not_informed"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#consentimiento_libre001"/>
-        <Literal>Cuando no se comunica al titular de los datos el uso o transferencia de los mismos</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Not_informed"/>
         <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#consentimiento_no_autorizado001"/>
         <Literal>No informar al titular sobre la no autorización del consentimiento</Literal>
@@ -6338,6 +6298,16 @@ Por otro parte los datos crediticios son los datos bursátiles o bancarios del t
         <Literal>It must be possible to update financial data</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Informed"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#free_consent001"/>
+        <Literal>When the owner of the data is notified of its use or transfer</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Not_informed"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#free_consent001"/>
+        <Literal>When the owner of the data is not informed of the use or transfer of such data.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Access"/>
         <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#health_data001"/>
         <Literal>They must have optimal access</Literal>
@@ -6416,6 +6386,16 @@ Por otro parte los datos crediticios son los datos bursátiles o bancarios del t
         <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Request_information_verification"/>
         <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#holder001"/>
         <Literal>The owner of the data can request the verification of his information to the person in charge or responsible for the treatment of his information without cost and as soon as possible.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Informed"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#informed_consent001"/>
+        <Literal>When the owner is informed of how his or her data will be used or transferred.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Not_informed"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#informed_consent001"/>
+        <Literal>When the owner is not informed about how his data will be used or transferred.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Detail_of_investigation_of_infringements"/>
@@ -7496,6 +7476,16 @@ For example, failure to process or implement a process in the transfer of inform
         <Literal>The holder&apos;s data may be used as long as the information is present in public sources. For example, public databases.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Informed"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#specific_consent001"/>
+        <Literal>When any specific consent is requested from the data subject</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Not_informed"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#specific_consent001"/>
+        <Literal>When no specific consent is requested from the data subject.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Applied"/>
         <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#techniques001"/>
         <Literal>When the verification process is applied</Literal>
@@ -7572,38 +7562,38 @@ For example, failure to process or implement a process in the transfer of inform
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Certifying_international_transfer_processes"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#transferencia_o_comunicación001"/>
-        <Literal>Aprobar los procesos de transferencia cuando estos sean claros</Literal>
+        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#transfer_or_communication001"/>
+        <Literal>Approve the transfer processes when these are clear</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Contract"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#transferencia_o_comunicación001"/>
-        <Literal>Contrato con los involucrados</Literal>
+        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#transfer_or_communication001"/>
+        <Literal>Contract with stakeholders</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Data_admitted_countries_international_transfer"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#transferencia_o_comunicación001"/>
-        <Literal>Información de los países admitidos</Literal>
+        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#transfer_or_communication001"/>
+        <Literal>Admitted countries information</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Detail_transfer_domestic_domestic_scope"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#transferencia_o_comunicación001"/>
-        <Literal>Información</Literal>
+        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#transfer_or_communication001"/>
+        <Literal>Information</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Exceptions"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#transferencia_o_comunicación001"/>
-        <Literal>Excepciones que pueden ocurrir en el proceso de transferencia</Literal>
+        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#transfer_or_communication001"/>
+        <Literal>Exceptions that may occur in the transfer process</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Informed"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#transferencia_o_comunicación001"/>
-        <Literal>Derechos informados</Literal>
+        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#transfer_or_communication001"/>
+        <Literal>Rights informed</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Legal_or_regulatory_obligation"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#transferencia_o_comunicación001"/>
-        <Literal>Obligaciones legales</Literal>
+        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#transfer_or_communication001"/>
+        <Literal>Legal obligations</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Analysis_methodologies"/>
@@ -7706,6 +7696,16 @@ For example, failure to process or implement a process in the transfer of inform
         <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Very_serious"/>
         <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#treatment001"/>
         <Literal>Not specified, but if there is, the Authority decides what action to take.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Informed"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#unequivocal_consent001"/>
+        <Literal>When any unambiguous consent is requested from the data subject</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Not_informed"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#unequivocal_consent001"/>
+        <Literal>When unambiguous consent is not requested from the data subject</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Audit"/>
@@ -16405,11 +16405,181 @@ For example, failure to process or implement a process in the transfer of inform
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>List of exceptions</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Q_18</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#and_emphasis_is_on_the_following_exceptions"/>
+                <Variable IRI="/toc"/>
+                <Variable IRI="/exp"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Exceptions"/>
+                <Variable IRI="/exp"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Transfer_or_communication"/>
+                <Variable IRI="/toc"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="/exp"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>What are the exceptions when I do not need the consent of the data subject to transfer personal data?</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Q_09</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#and_emphasis_is_on_the_following_exceptions"/>
+                <Variable IRI="/toc"/>
+                <Variable IRI="/exp"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Transfer_or_communication"/>
+                <Variable IRI="/toc"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Exceptions"/>
+                <Variable IRI="/exp"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="/exp"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>List of rights</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Q_19</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#can_be_rights_of"/>
+                <Variable IRI="/rg"/>
+                <Variable IRI="/cb"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Rights"/>
+                <Variable IRI="/rg"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#and_in_exceptional_cases_you_have_to"/>
+                <Variable IRI="/fc2"/>
+                <Variable IRI="/expRg"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Exceptions_to_the_rights_in_verification"/>
+                <Variable IRI="/expRg"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="/rg"/>
+                <Variable IRI="/expRg"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>What recourse does the owner of personal data have in case the verified information is incorrect or is being misused?</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Q_16</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Holder_in_verification"/>
+                <Variable IRI="/h"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Informed"/>
+                <Variable IRI="/h"/>
+                <Variable IRI="/inf"/>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="/h"/>
+                <Variable IRI="/inf"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>What actions can the data subject take to verify the information held by the data controller?</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Q_11</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Holder_in_verification"/>
+                <Variable IRI="/h"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Request_information_verification"/>
+                <Variable IRI="/h"/>
+                <Variable IRI="/riv"/>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="/h"/>
+                <Variable IRI="/riv"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
             <Literal>What are the conditions of legitimacy when transferring personal data?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Question_05</Literal>
+            <Literal>Q_05</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -16436,11 +16606,45 @@ For example, failure to process or implement a process in the transfer of inform
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>What are the components of the Organic Law on Personal Data Protection that appear in the transfer and verification processes?</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Q_15</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Members_of_the_protection_system_in_verification"/>
+                <Variable IRI="/system"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Members_of_the_protection_system_in_verification"/>
+                <Variable IRI="/m"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#is_compliant_with_the_following_roles"/>
+                <Variable IRI="/system"/>
+                <Variable IRI="/m"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="/m"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
             <Literal>Which authority is responsible for authorizing the transfer of data to international institutions?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Question_02</Literal>
+            <Literal>Q_02</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -16476,7 +16680,7 @@ For example, failure to process or implement a process in the transfer of inform
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Question_06</Literal>
+            <Literal>Q_06</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -16513,7 +16717,7 @@ For example, failure to process or implement a process in the transfer of inform
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Question_01</Literal>
+            <Literal>Q_01</Literal>
         </Annotation>
         <Body>
             <DataPropertyAtom>
@@ -16549,7 +16753,7 @@ For example, failure to process or implement a process in the transfer of inform
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Question_03</Literal>
+            <Literal>Q_03</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -16578,11 +16782,305 @@ For example, failure to process or implement a process in the transfer of inform
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>What is the role of the Personal Data Protection Authority in the verification of information and compliance with security measures by the data controller?</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Q_17</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Personal_Data_Protection_Authority_in_verification"/>
+                <Variable IRI="/pdpa"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Correct"/>
+                <Variable IRI="/pdpa"/>
+                <Variable IRI="/cr"/>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="/pdpa"/>
+                <Variable IRI="/cr"/>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#limit">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Who is responsible for implementing adequate security measures to protect the data at the time of a transfer of personal data?</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Q_08</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Treatment_Manager_in_verification"/>
+                <Variable IRI="/tm"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Responsible_for_treatment_in_verification"/>
+                <Variable IRI="/rt"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Personal_data_security_details"/>
+                <Variable IRI="/tm"/>
+                <Variable IRI="/sec"/>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="/tm"/>
+                <Variable IRI="/rt"/>
+                <Variable IRI="/sec"/>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#limit">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>What security measures must the data controller implement to ensure the integrity of personal data and prevent its unauthorized alteration or modification?</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Q_14</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Responsible_for_treatment_in_verification"/>
+                <Variable IRI="/rt"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Implementing_verification_processes"/>
+                <Variable IRI="/rt"/>
+                <Variable IRI="/ivp"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Personal_data_security_details"/>
+                <Variable IRI="/rt"/>
+                <Variable IRI="/pds"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Protection_policies"/>
+                <Variable IRI="/rt"/>
+                <Variable IRI="/pp"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Analysis_methodologies"/>
+                <Variable IRI="/rt"/>
+                <Variable IRI="/am"/>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="/rt"/>
+                <Variable IRI="/ivp"/>
+                <Variable IRI="/pds"/>
+                <Variable IRI="/pp"/>
+                <Variable IRI="/am"/>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#limit">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Who is responsible for checking the accuracy of the information transferred?</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Q_10</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Responsible_for_treatment_in_verification"/>
+                <Variable IRI="/rt"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Maintaining_the_accuracy_of_the_information"/>
+                <Variable IRI="/rt"/>
+                <Variable IRI="/exactitude"/>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="/rt"/>
+                <Variable IRI="/exactitude"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>What are the rights of the holder of personal data in relation to the verification of the information?</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Q_13</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#the_law_has_the_following_rights"/>
+                <Variable IRI="/law"/>
+                <Variable IRI="/rg"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Rights_in_verification"/>
+                <Variable IRI="/rg"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Rights_in_verification"/>
+                <Variable IRI="/law"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="/rg"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>What are the activities that may be carried out by the processor of personal data in connection with the transfer of data?</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Q_07</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Treatment_Manager_in_verification"/>
+                <Variable IRI="/tm"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Protection_policies"/>
+                <Variable IRI="/tm"/>
+                <Variable IRI="/politics"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Personal_data_security_details"/>
+                <Variable IRI="/tm"/>
+                <Variable IRI="/pds"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Maintaining_the_accuracy_of_the_information"/>
+                <Variable IRI="/tm"/>
+                <Variable IRI="/mai"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Binding_cooperative_rules"/>
+                <Variable IRI="/tm"/>
+                <Variable IRI="/bcr"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Analysis_methodologies"/>
+                <Variable IRI="/tm"/>
+                <Variable IRI="/am"/>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="/tm"/>
+                <Variable IRI="/politics"/>
+                <Variable IRI="/pds"/>
+                <Variable IRI="/mai"/>
+                <Variable IRI="/bcr"/>
+                <Variable IRI="/am"/>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#limit">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>What are the consequences if the personal data stored by the data controller is found to be inaccurate or outdated?</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Q_12</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Treatment_Manager_in_verification"/>
+                <Variable IRI="/tm"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Slight"/>
+                <Variable IRI="/tm"/>
+                <Variable IRI="/slg"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Serious"/>
+                <Variable IRI="/tm"/>
+                <Variable IRI="/sr"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Very_serious"/>
+                <Variable IRI="/tm"/>
+                <Variable IRI="/vs"/>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="/tm"/>
+                <Variable IRI="/slg"/>
+                <Variable IRI="/sr"/>
+                <Variable IRI="/vs"/>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#limit">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
             <Literal>What are the penalties for failure to properly handle the transfer of information?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Question_04</Literal>
+            <Literal>Q_04</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -16624,7 +17122,7 @@ For example, failure to process or implement a process in the transfer of inform
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Q04</Literal>
+            <Literal>Q_24</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -16654,7 +17152,7 @@ For example, failure to process or implement a process in the transfer of inform
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Q16</Literal>
+            <Literal>Q_36</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -16689,7 +17187,7 @@ For example, failure to process or implement a process in the transfer of inform
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Q08</Literal>
+            <Literal>Q_28</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -16724,7 +17222,7 @@ For example, failure to process or implement a process in the transfer of inform
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Q09</Literal>
+            <Literal>Q_29</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -16754,7 +17252,7 @@ For example, failure to process or implement a process in the transfer of inform
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Q10</Literal>
+            <Literal>Q_30</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -16784,7 +17282,7 @@ For example, failure to process or implement a process in the transfer of inform
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Q02</Literal>
+            <Literal>Q_22</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -16819,7 +17317,7 @@ For example, failure to process or implement a process in the transfer of inform
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Q06</Literal>
+            <Literal>Q_26</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -16858,7 +17356,7 @@ For example, failure to process or implement a process in the transfer of inform
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Q03</Literal>
+            <Literal>Q_23</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -16884,11 +17382,11 @@ For example, failure to process or implement a process in the transfer of inform
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Under what circumstances is the processing of data by the company not subject to the provisions established by the LOPDP and what is the nature of each of these situations?</Literal>
+            <Literal>Under what circumstances is the processing of data by the company not subject to the provisions established by the Organic Law on Personal Data Protection and what is the nature of each of these situations?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Q15</Literal>
+            <Literal>Q_35</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -16924,7 +17422,7 @@ For example, failure to process or implement a process in the transfer of inform
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Q17</Literal>
+            <Literal>Q_37</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -16957,7 +17455,7 @@ For example, failure to process or implement a process in the transfer of inform
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Q11</Literal>
+            <Literal>Q_31</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -16999,7 +17497,7 @@ For example, failure to process or implement a process in the transfer of inform
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Q13</Literal>
+            <Literal>Q_33</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -17029,7 +17527,7 @@ For example, failure to process or implement a process in the transfer of inform
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Q14</Literal>
+            <Literal>Q_34</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -17059,7 +17557,7 @@ For example, failure to process or implement a process in the transfer of inform
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Q18</Literal>
+            <Literal>Q_38</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -17092,7 +17590,7 @@ For example, failure to process or implement a process in the transfer of inform
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Q05</Literal>
+            <Literal>Q_25</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -17130,7 +17628,7 @@ For example, failure to process or implement a process in the transfer of inform
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Q01</Literal>
+            <Literal>Q_21</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -17163,7 +17661,7 @@ For example, failure to process or implement a process in the transfer of inform
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Q07</Literal>
+            <Literal>Q_27</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -17193,7 +17691,7 @@ For example, failure to process or implement a process in the transfer of inform
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Q12</Literal>
+            <Literal>Q_32</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -17222,19 +17720,24 @@ For example, failure to process or implement a process in the transfer of inform
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>What are the activities that may be carried out by the processor of personal data in connection with the transfer of data?</Literal>
+            <Literal>What corrective actions are applied in the verification process?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Question_07</Literal>
+            <Literal>Q_20</Literal>
         </Annotation>
         <Body>
-            <ClassAtom>
-                <Class IRI="#Treatment_Manager"/>
-                <Variable IRI="/tm"/>
-            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#that_can_be_of_the_type"/>
+                <Variable IRI="/bt"/>
+                <Variable IRI="/cm"/>
+            </ObjectPropertyAtom>
         </Body>
-        <Head/>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="/cm"/>
+            </BuiltInAtom>
+        </Head>
     </DLSafeRule>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>

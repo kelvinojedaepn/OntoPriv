@@ -244,9 +244,6 @@
         <Class IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Vital_interest_of_another_person"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Addressee"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Anonymization"/>
     </Declaration>
     <Declaration>
@@ -292,6 +289,15 @@
         <Class IRI="#Credit_data_processing"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Data_Controller"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data_Owner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data_Processor"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Data_base"/>
     </Declaration>
     <Declaration>
@@ -313,7 +319,7 @@
         <Class IRI="#Deceased_persons_data"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Delegate_for_personal_data_protection"/>
+        <Class IRI="#Delegate"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Disabled_owner_data"/>
@@ -335,9 +341,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Health_related_data_processing"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Holder"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Holder_between_15_to_17_years_old"/>
@@ -448,10 +451,10 @@
         <Class IRI="#Recall_mechanisms"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Relevance"/>
+        <Class IRI="#Recipient"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Responsible_for_treatment"/>
+        <Class IRI="#Relevance"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Revocation_of_consent"/>
@@ -527,9 +530,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Transparency"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Treatment_Manager"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Turnover"/>
@@ -643,6 +643,12 @@
         <ObjectProperty IRI="#Criteria"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#Data_Controller"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Data_Owner"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#Data_or_database_of_criminal_infractions"/>
     </Declaration>
     <Declaration>
@@ -655,16 +661,13 @@
         <ObjectProperty IRI="#Deceased_owner"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#Delegate_for_personal_data_protection"/>
+        <ObjectProperty IRI="#Delegate"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#Exceptions_of_right"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#Health_related_data_processing"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Holder"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#Holder_under_15_years_old"/>
@@ -707,9 +710,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#Recall_mechanisms"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Responsible_for_treatment"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#Revocation_of_consent"/>
@@ -1357,6 +1357,12 @@
         <DataProperty IRI="#Credit_data_processing"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#Data_Controller"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Data_Owner"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#Data_processing"/>
     </Declaration>
     <Declaration>
@@ -1366,7 +1372,7 @@
         <DataProperty IRI="#Deceased_owner"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#Delegate_for_personal_data_protection"/>
+        <DataProperty IRI="#Delegate"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#Exceptions_of_right"/>
@@ -1376,9 +1382,6 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#Health_related_data_processing"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#Holder"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#Inapplicability"/>
@@ -1424,9 +1427,6 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#Recall_mechanisms"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#Responsible_for_treatment"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#Revocation_of_consent"/>
@@ -2745,10 +2745,6 @@
         <Class IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Exceptions_for_international_transfers_or_communications"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Addressee"/>
-        <Class IRI="#Members_of_the_personal_data_protection_system"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Anonymization"/>
         <Class IRI="#Terminology"/>
     </SubClassOf>
@@ -2809,6 +2805,18 @@
         <Class IRI="#Applicability"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Data_Controller"/>
+        <Class IRI="#Members_of_the_personal_data_protection_system"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Data_Owner"/>
+        <Class IRI="#Members_of_the_personal_data_protection_system"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Data_Processor"/>
+        <Class IRI="#Members_of_the_personal_data_protection_system"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Data_base"/>
         <Class IRI="#Terminology"/>
     </SubClassOf>
@@ -2830,14 +2838,14 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Deceased_owner"/>
-        <Class IRI="#Holder"/>
+        <Class IRI="#Data_Owner"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Deceased_persons_data"/>
         <Class IRI="#Personal_data"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Delegate_for_personal_data_protection"/>
+        <Class IRI="#Delegate"/>
         <Class IRI="#Members_of_the_personal_data_protection_system"/>
     </SubClassOf>
     <SubClassOf>
@@ -2869,24 +2877,20 @@
         <Class IRI="#Applicability"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Holder"/>
-        <Class IRI="#Members_of_the_personal_data_protection_system"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Holder_between_15_to_17_years_old"/>
-        <Class IRI="#Holder"/>
+        <Class IRI="#Data_Owner"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Holder_over_17_years_old"/>
-        <Class IRI="#Holder"/>
+        <Class IRI="#Data_Owner"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Holder_under_15_years_old"/>
-        <Class IRI="#Holder"/>
+        <Class IRI="#Data_Owner"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Holder_with_disability"/>
-        <Class IRI="#Holder"/>
+        <Class IRI="#Data_Owner"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Inapplicability"/>
@@ -2914,7 +2918,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Legal_representative_owner"/>
-        <Class IRI="#Holder"/>
+        <Class IRI="#Data_Owner"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Legality"/>
@@ -3013,12 +3017,12 @@
         <Class IRI="#Revocation_of_consent"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Relevance"/>
-        <Class IRI="#Principles"/>
+        <Class IRI="#Recipient"/>
+        <Class IRI="#Members_of_the_personal_data_protection_system"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Responsible_for_treatment"/>
-        <Class IRI="#Members_of_the_personal_data_protection_system"/>
+        <Class IRI="#Relevance"/>
+        <Class IRI="#Principles"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Revocation_of_consent"/>
@@ -3106,7 +3110,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Successor_right_holder"/>
-        <Class IRI="#Holder"/>
+        <Class IRI="#Data_Owner"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Terminology"/>
@@ -3119,10 +3123,6 @@
     <SubClassOf>
         <Class IRI="#Transparency"/>
         <Class IRI="#Principles"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Treatment_Manager"/>
-        <Class IRI="#Members_of_the_personal_data_protection_system"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Turnover"/>
@@ -3538,7 +3538,7 @@
         <NamedIndividual IRI="#Purpose"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Addressee"/>
+        <Class IRI="#Recipient"/>
         <NamedIndividual IRI="#addressee"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -3606,7 +3606,7 @@
         <NamedIndividual IRI="#data_base"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Holder"/>
+        <Class IRI="#Data_Owner"/>
         <NamedIndividual IRI="#data_holder"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -3634,7 +3634,7 @@
         <NamedIndividual IRI="#deceased_persons_data"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Delegate_for_personal_data_protection"/>
+        <Class IRI="#Delegate"/>
         <NamedIndividual IRI="#delegate_for_personal_data_protection"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -3806,7 +3806,7 @@
         <NamedIndividual IRI="#relevance_of_personal_data"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Responsible_for_treatment"/>
+        <Class IRI="#Data_Controller"/>
         <NamedIndividual IRI="#responsible_for_treatment"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -3910,7 +3910,7 @@
         <NamedIndividual IRI="#transparency"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Treatment_Manager"/>
+        <Class IRI="#Data_Processor"/>
         <NamedIndividual IRI="#treatment_manager"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -10395,6 +10395,14 @@ For example, failure to process or implement a process in the transfer of inform
         <ObjectProperty IRI="#Principles"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Data_Controller"/>
+        <ObjectProperty IRI="#Members_of_the_personal_data_protection_system"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Data_Owner"/>
+        <ObjectProperty IRI="#Members_of_the_personal_data_protection_system"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#Data_or_database_of_criminal_infractions"/>
         <ObjectProperty IRI="#Inapplicability"/>
     </SubObjectPropertyOf>
@@ -10408,10 +10416,10 @@ For example, failure to process or implement a process in the transfer of inform
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#Deceased_owner"/>
-        <ObjectProperty IRI="#Holder"/>
+        <ObjectProperty IRI="#Data_Owner"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#Delegate_for_personal_data_protection"/>
+        <ObjectProperty IRI="#Delegate"/>
         <ObjectProperty IRI="#Members_of_the_personal_data_protection_system"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -10423,12 +10431,8 @@ For example, failure to process or implement a process in the transfer of inform
         <ObjectProperty IRI="#Applicability"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#Holder"/>
-        <ObjectProperty IRI="#Members_of_the_personal_data_protection_system"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
         <ObjectProperty IRI="#Holder_under_15_years_old"/>
-        <ObjectProperty IRI="#Holder"/>
+        <ObjectProperty IRI="#Data_Owner"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#Inapplicability"/>
@@ -10477,10 +10481,6 @@ For example, failure to process or implement a process in the transfer of inform
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#Recall_mechanisms"/>
         <ObjectProperty IRI="#Revocation_of_consent"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#Responsible_for_treatment"/>
-        <ObjectProperty IRI="#Members_of_the_personal_data_protection_system"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#Revocation_of_consent"/>
@@ -10580,7 +10580,7 @@ For example, failure to process or implement a process in the transfer of inform
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#count_with_the_following"/>
-        <ObjectProperty IRI="#Holder"/>
+        <ObjectProperty IRI="#Data_Owner"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#data_types_are_comprised_of"/>
@@ -10600,7 +10600,7 @@ For example, failure to process or implement a process in the transfer of inform
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#in_case_of_impugning_the_exaccuracy_of_data_a"/>
-        <ObjectProperty IRI="#Holder"/>
+        <ObjectProperty IRI="#Data_Owner"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#in_case_of_processing_it_must_be_compliant_with"/>
@@ -10608,7 +10608,7 @@ For example, failure to process or implement a process in the transfer of inform
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#in_case_of_suspension_of_treatment_must_resort_to"/>
-        <ObjectProperty IRI="#Holder"/>
+        <ObjectProperty IRI="#Data_Owner"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#in_cases_of_direct_data_gathering_by_the"/>
@@ -10680,11 +10680,11 @@ For example, failure to process or implement a process in the transfer of inform
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#must_have_been_complied_with_regard_to_proactive_responsibility"/>
-        <ObjectProperty IRI="#Responsible_for_treatment"/>
+        <ObjectProperty IRI="#Data_Controller"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#must_render_accounts_regarding_the_treatment_with"/>
-        <ObjectProperty IRI="#Responsible_for_treatment"/>
+        <ObjectProperty IRI="#Data_Controller"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#need_of"/>
@@ -10724,7 +10724,7 @@ For example, failure to process or implement a process in the transfer of inform
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#shall_be_observed_by"/>
-        <ObjectProperty IRI="#Delegate_for_personal_data_protection"/>
+        <ObjectProperty IRI="#Delegate"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#son_establecidos_por"/>
@@ -10896,7 +10896,7 @@ For example, failure to process or implement a process in the transfer of inform
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#count_with_the_following"/>
-        <Class IRI="#Holder"/>
+        <Class IRI="#Data_Owner"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#data_types_are_comprised_of"/>
@@ -10916,7 +10916,7 @@ For example, failure to process or implement a process in the transfer of inform
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#in_case_of_impugning_the_exaccuracy_of_data_a"/>
-        <Class IRI="#Holder"/>
+        <Class IRI="#Data_Owner"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#in_case_of_processing_it_must_be_compliant_with"/>
@@ -10924,7 +10924,7 @@ For example, failure to process or implement a process in the transfer of inform
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#in_case_of_suspension_of_treatment_must_resort_to"/>
-        <Class IRI="#Holder"/>
+        <Class IRI="#Data_Owner"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#in_cases_of_direct_data_gathering_by_the"/>
@@ -10968,7 +10968,15 @@ For example, failure to process or implement a process in the transfer of inform
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#is_related_to"/>
-        <Class IRI="#Delegate_for_personal_data_protection"/>
+        <Class IRI="#Data_Controller"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_related_to"/>
+        <Class IRI="#Data_Processor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_related_to"/>
+        <Class IRI="#Delegate"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#is_related_to"/>
@@ -10984,19 +10992,11 @@ For example, failure to process or implement a process in the transfer of inform
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#is_related_to"/>
-        <Class IRI="#Responsible_for_treatment"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#is_related_to"/>
         <Class IRI="#Right_not_to_be_object_to_automated_evaluations"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#is_related_to"/>
         <Class IRI="#Right_of_access"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#is_related_to"/>
-        <Class IRI="#Treatment_Manager"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#is_supervised_by"/>
@@ -11028,11 +11028,11 @@ For example, failure to process or implement a process in the transfer of inform
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#must_have_been_complied_with_regard_to_proactive_responsibility"/>
-        <Class IRI="#Responsible_for_treatment"/>
+        <Class IRI="#Data_Controller"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#must_render_accounts_regarding_the_treatment_with"/>
-        <Class IRI="#Responsible_for_treatment"/>
+        <Class IRI="#Data_Controller"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#need_of"/>
@@ -11088,7 +11088,7 @@ For example, failure to process or implement a process in the transfer of inform
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#shall_be_observed_by"/>
-        <Class IRI="#Delegate_for_personal_data_protection"/>
+        <Class IRI="#Delegate"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#son_establecidos_por"/>
@@ -11440,10 +11440,6 @@ For example, failure to process or implement a process in the transfer of inform
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#are_composed_of"/>
-        <Class IRI="#Addressee"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#are_composed_of"/>
         <Class IRI="#Application_favorable_to_the_owner"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -11464,6 +11460,18 @@ For example, failure to process or implement a process in the transfer of inform
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#are_composed_of"/>
+        <Class IRI="#Data_Controller"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#are_composed_of"/>
+        <Class IRI="#Data_Owner"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#are_composed_of"/>
+        <Class IRI="#Data_Processor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#are_composed_of"/>
         <Class IRI="#Data_base"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -11476,11 +11484,7 @@ For example, failure to process or implement a process in the transfer of inform
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#are_composed_of"/>
-        <Class IRI="#Delegate_for_personal_data_protection"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#are_composed_of"/>
-        <Class IRI="#Holder"/>
+        <Class IRI="#Delegate"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#are_composed_of"/>
@@ -11556,11 +11560,11 @@ For example, failure to process or implement a process in the transfer of inform
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#are_composed_of"/>
-        <Class IRI="#Relevance"/>
+        <Class IRI="#Recipient"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#are_composed_of"/>
-        <Class IRI="#Responsible_for_treatment"/>
+        <Class IRI="#Relevance"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#are_composed_of"/>
@@ -11573,10 +11577,6 @@ For example, failure to process or implement a process in the transfer of inform
     <ObjectPropertyRange>
         <ObjectProperty IRI="#are_composed_of"/>
         <Class IRI="#Transparency"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#are_composed_of"/>
-        <Class IRI="#Treatment_Manager"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#are_comprised_of"/>
@@ -11636,7 +11636,7 @@ For example, failure to process or implement a process in the transfer of inform
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#are_destined_to"/>
-        <Class IRI="#Responsible_for_treatment"/>
+        <Class IRI="#Data_Controller"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#are_made_of"/>
@@ -11664,11 +11664,11 @@ For example, failure to process or implement a process in the transfer of inform
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#committed_by"/>
-        <Class IRI="#Responsible_for_treatment"/>
+        <Class IRI="#Data_Controller"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#committed_by"/>
-        <Class IRI="#Treatment_Manager"/>
+        <Class IRI="#Data_Processor"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#count_with_the_following"/>
@@ -11704,7 +11704,7 @@ For example, failure to process or implement a process in the transfer of inform
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#for_the"/>
-        <Class IRI="#Holder"/>
+        <Class IRI="#Data_Owner"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#has_as_the_basis_of"/>
@@ -11712,7 +11712,7 @@ For example, failure to process or implement a process in the transfer of inform
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#in_case_of_impugning_the_exaccuracy_of_data_a"/>
-        <Class IRI="#Responsible_for_treatment"/>
+        <Class IRI="#Data_Controller"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#in_case_of_processing_it_must_be_compliant_with"/>
@@ -11724,7 +11724,7 @@ For example, failure to process or implement a process in the transfer of inform
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#in_cases_of_direct_data_gathering_by_the"/>
-        <Class IRI="#Holder"/>
+        <Class IRI="#Data_Owner"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#in_respect_to_the"/>
@@ -11732,7 +11732,7 @@ For example, failure to process or implement a process in the transfer of inform
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#in_the_case_of_no_direct_data_collection_by_the"/>
-        <Class IRI="#Holder"/>
+        <Class IRI="#Data_Owner"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#is_authorized_by"/>
@@ -11748,19 +11748,19 @@ For example, failure to process or implement a process in the transfer of inform
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#is_given_by"/>
-        <Class IRI="#Responsible_for_treatment"/>
+        <Class IRI="#Data_Controller"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#is_given_by"/>
-        <Class IRI="#Treatment_Manager"/>
+        <Class IRI="#Data_Processor"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#is_implemented_by"/>
-        <Class IRI="#Responsible_for_treatment"/>
+        <Class IRI="#Data_Controller"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#is_in_charge_of"/>
-        <Class IRI="#Responsible_for_treatment"/>
+        <Class IRI="#Data_Controller"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#is_related_to"/>
@@ -11776,7 +11776,7 @@ For example, failure to process or implement a process in the transfer of inform
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#is_related_to"/>
-        <Class IRI="#Delegate_for_personal_data_protection"/>
+        <Class IRI="#Delegate"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#is_related_to"/>
@@ -11836,7 +11836,7 @@ For example, failure to process or implement a process in the transfer of inform
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#may_be_made_by"/>
-        <Class IRI="#Holder"/>
+        <Class IRI="#Data_Owner"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#must_be_aware_of_the_possibility_of_realizing"/>
@@ -11868,7 +11868,7 @@ For example, failure to process or implement a process in the transfer of inform
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#must_render_accounts_regarding_the_treatment_with"/>
-        <Class IRI="#Holder"/>
+        <Class IRI="#Data_Owner"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#must_render_accounts_regarding_the_treatment_with"/>
@@ -11916,19 +11916,19 @@ For example, failure to process or implement a process in the transfer of inform
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#responsible_for_establishing_the_deadlines_for_suspension_or_periodic_review_within_data_processing_is"/>
-        <Class IRI="#Responsible_for_treatment"/>
+        <Class IRI="#Data_Controller"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#responsible_for_implementing_safety_measures"/>
-        <Class IRI="#Responsible_for_treatment"/>
+        <Class IRI="#Data_Controller"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#responsible_for_implementing_safety_measures"/>
-        <Class IRI="#Treatment_Manager"/>
+        <Class IRI="#Data_Processor"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#right_account_encumbered"/>
-        <Class IRI="#Responsible_for_treatment"/>
+        <Class IRI="#Data_Controller"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#shall_at_least_comply_with_the_minimum_with"/>
@@ -11940,15 +11940,15 @@ For example, failure to process or implement a process in the transfer of inform
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#shall_be_observed_by"/>
-        <Class IRI="#Responsible_for_treatment"/>
+        <Class IRI="#Data_Controller"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#shall_be_observed_by"/>
-        <Class IRI="#Treatment_Manager"/>
+        <Class IRI="#Data_Processor"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#son_establecidos_por"/>
-        <Class IRI="#Responsible_for_treatment"/>
+        <Class IRI="#Data_Controller"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#special_categories_of_personal_data_are_composed_of"/>
@@ -12311,6 +12311,14 @@ For example, failure to process or implement a process in the transfer of inform
         <DataProperty IRI="#Applicability"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
+        <DataProperty IRI="#Data_Controller"/>
+        <DataProperty IRI="#Members_of_the_personal_data_protection_system"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Data_Owner"/>
+        <DataProperty IRI="#Members_of_the_personal_data_protection_system"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
         <DataProperty IRI="#Data_processing"/>
         <DataProperty IRI="#Terminology"/>
     </SubDataPropertyOf>
@@ -12320,10 +12328,10 @@ For example, failure to process or implement a process in the transfer of inform
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#Deceased_owner"/>
-        <DataProperty IRI="#Holder"/>
+        <DataProperty IRI="#Data_Owner"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="#Delegate_for_personal_data_protection"/>
+        <DataProperty IRI="#Delegate"/>
         <DataProperty IRI="#Members_of_the_personal_data_protection_system"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
@@ -12339,10 +12347,6 @@ For example, failure to process or implement a process in the transfer of inform
         <DataProperty IRI="#Applicability"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="#Holder"/>
-        <DataProperty IRI="#Members_of_the_personal_data_protection_system"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
         <DataProperty IRI="#Inapplicability"/>
         <DataProperty IRI="#Processing"/>
     </SubDataPropertyOf>
@@ -12356,7 +12360,7 @@ For example, failure to process or implement a process in the transfer of inform
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#Legal_representative_owner"/>
-        <DataProperty IRI="#Holder"/>
+        <DataProperty IRI="#Data_Owner"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#Members_of_the_personal_data_protection_system"/>
@@ -12397,10 +12401,6 @@ For example, failure to process or implement a process in the transfer of inform
     <SubDataPropertyOf>
         <DataProperty IRI="#Recall_mechanisms"/>
         <DataProperty IRI="#Revocation_of_consent"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#Responsible_for_treatment"/>
-        <DataProperty IRI="#Members_of_the_personal_data_protection_system"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#Revocation_of_consent"/>
@@ -12476,7 +12476,7 @@ For example, failure to process or implement a process in the transfer of inform
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#Successor_right_holder"/>
-        <DataProperty IRI="#Holder"/>
+        <DataProperty IRI="#Data_Owner"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#Terminology"/>
@@ -12488,11 +12488,11 @@ For example, failure to process or implement a process in the transfer of inform
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#a_data_protection_delegate_will_be_assigned"/>
-        <DataProperty IRI="#Delegate_for_personal_data_protection"/>
+        <DataProperty IRI="#Delegate"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#accrediting_compliance_with_the_mechanisms"/>
-        <DataProperty IRI="#Responsible_for_treatment"/>
+        <DataProperty IRI="#Data_Controller"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#actions_regarding_health_data_processing"/>
@@ -12504,7 +12504,7 @@ For example, failure to process or implement a process in the transfer of inform
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#activity_in_respect_to_proactive_and_demonstrated_responsibility"/>
-        <DataProperty IRI="#Responsible_for_treatment"/>
+        <DataProperty IRI="#Data_Controller"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#activity_of_the_legal_representative_owner"/>
@@ -12512,19 +12512,19 @@ For example, failure to process or implement a process in the transfer of inform
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#activity_within_opposition_law"/>
-        <DataProperty IRI="#Responsible_for_treatment"/>
+        <DataProperty IRI="#Data_Controller"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#activity_within_right_of_access"/>
-        <DataProperty IRI="#Responsible_for_treatment"/>
+        <DataProperty IRI="#Data_Controller"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#activity_within_the_right_of_correction_and_update"/>
-        <DataProperty IRI="#Responsible_for_treatment"/>
+        <DataProperty IRI="#Data_Controller"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#activity_within_the_right_of_deletion"/>
-        <DataProperty IRI="#Responsible_for_treatment"/>
+        <DataProperty IRI="#Data_Controller"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#affects_to"/>
@@ -12532,7 +12532,7 @@ For example, failure to process or implement a process in the transfer of inform
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#age"/>
-        <DataProperty IRI="#Holder"/>
+        <DataProperty IRI="#Data_Owner"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#allow_evaluate"/>
@@ -12572,7 +12572,7 @@ For example, failure to process or implement a process in the transfer of inform
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#can_give_explicit_consent_to_treatment"/>
-        <DataProperty IRI="#Holder"/>
+        <DataProperty IRI="#Data_Owner"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#cannot_be_done_with_the_processing_of_credit_data"/>
@@ -12604,7 +12604,7 @@ For example, failure to process or implement a process in the transfer of inform
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#contact_data"/>
-        <DataProperty IRI="#Delegate_for_personal_data_protection"/>
+        <DataProperty IRI="#Delegate"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#control_functions"/>
@@ -12632,15 +12632,15 @@ For example, failure to process or implement a process in the transfer of inform
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#deadline_in_days_for_the_right_of_access"/>
-        <DataProperty IRI="#Responsible_for_treatment"/>
+        <DataProperty IRI="#Data_Controller"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#deadline_in_days_for_the_right_to_oppose_opposition"/>
-        <DataProperty IRI="#Responsible_for_treatment"/>
+        <DataProperty IRI="#Data_Controller"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#delegate_comments"/>
-        <DataProperty IRI="#Responsible_for_treatment"/>
+        <DataProperty IRI="#Data_Controller"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#description"/>
@@ -12744,11 +12744,11 @@ For example, failure to process or implement a process in the transfer of inform
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#in_case_of_no_direct_obtaining_by_the_owner"/>
-        <DataProperty IRI="#Holder"/>
+        <DataProperty IRI="#Data_Owner"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#in_cases_of_automated_evaluations"/>
-        <DataProperty IRI="#Holder"/>
+        <DataProperty IRI="#Data_Owner"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#in_direct_marketing_cases"/>
@@ -12760,7 +12760,7 @@ For example, failure to process or implement a process in the transfer of inform
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#in_the_event_of_a_challenge_of_data_exaccuracy"/>
-        <DataProperty IRI="#Responsible_for_treatment"/>
+        <DataProperty IRI="#Data_Controller"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#in_the_face_of_a_denial_or_no_response_to_the_claim"/>
@@ -12820,7 +12820,7 @@ For example, failure to process or implement a process in the transfer of inform
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#minor_infractions"/>
-        <DataProperty IRI="#Responsible_for_treatment"/>
+        <DataProperty IRI="#Data_Controller"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#must_be"/>
@@ -12844,7 +12844,7 @@ For example, failure to process or implement a process in the transfer of inform
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#obtaining_personal_data_directly_by_the_owner"/>
-        <DataProperty IRI="#Holder"/>
+        <DataProperty IRI="#Data_Owner"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#principle_of_attachment_with_sanction_to_the_responsible_party_or_the_treatment_manager"/>
@@ -12908,7 +12908,7 @@ For example, failure to process or implement a process in the transfer of inform
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#serious_infractions"/>
-        <DataProperty IRI="#Responsible_for_treatment"/>
+        <DataProperty IRI="#Data_Controller"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#shall_be"/>
@@ -12944,11 +12944,11 @@ For example, failure to process or implement a process in the transfer of inform
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#time_of_attention_in_days_for_the_right_of_removal"/>
-        <DataProperty IRI="#Responsible_for_treatment"/>
+        <DataProperty IRI="#Data_Controller"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#time_of_attention_within_days_for_the_right_of_correction_and_update"/>
-        <DataProperty IRI="#Responsible_for_treatment"/>
+        <DataProperty IRI="#Data_Controller"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#to_comply_with_quality_you_must"/>
@@ -14800,11 +14800,11 @@ For example, failure to process or implement a process in the transfer of inform
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#a_data_protection_delegate_will_be_assigned"/>
-        <Class IRI="#Delegate_for_personal_data_protection"/>
+        <Class IRI="#Delegate"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#accrediting_compliance_with_the_mechanisms"/>
-        <Class IRI="#Responsible_for_treatment"/>
+        <Class IRI="#Data_Controller"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#actions_regarding_health_data_processing"/>
@@ -14812,7 +14812,7 @@ For example, failure to process or implement a process in the transfer of inform
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#activity_in_respect_to_proactive_and_demonstrated_responsibility"/>
-        <Class IRI="#Responsible_for_treatment"/>
+        <Class IRI="#Data_Controller"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#activity_of_the_legal_representative_owner"/>
@@ -14820,11 +14820,11 @@ For example, failure to process or implement a process in the transfer of inform
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#activity_within_right_of_access"/>
-        <Class IRI="#Responsible_for_treatment"/>
+        <Class IRI="#Data_Controller"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#activity_within_the_right_of_correction_and_update"/>
-        <Class IRI="#Responsible_for_treatment"/>
+        <Class IRI="#Data_Controller"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#activity_within_the_right_of_deletion"/>
@@ -14836,7 +14836,7 @@ For example, failure to process or implement a process in the transfer of inform
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#age"/>
-        <Class IRI="#Holder"/>
+        <Class IRI="#Data_Owner"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#allow_evaluate"/>
@@ -14920,11 +14920,11 @@ For example, failure to process or implement a process in the transfer of inform
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#contact_data"/>
-        <Class IRI="#Delegate_for_personal_data_protection"/>
+        <Class IRI="#Data_Controller"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#contact_data"/>
-        <Class IRI="#Responsible_for_treatment"/>
+        <Class IRI="#Delegate"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#control_functions"/>
@@ -14952,11 +14952,11 @@ For example, failure to process or implement a process in the transfer of inform
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#deadline_in_days_for_the_right_of_access"/>
-        <Class IRI="#Responsible_for_treatment"/>
+        <Class IRI="#Data_Controller"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#delegate_comments"/>
-        <Class IRI="#Responsible_for_treatment"/>
+        <Class IRI="#Data_Controller"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#description"/>
@@ -15060,11 +15060,11 @@ For example, failure to process or implement a process in the transfer of inform
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#in_case_of_no_direct_obtaining_by_the_owner"/>
-        <Class IRI="#Holder"/>
+        <Class IRI="#Data_Owner"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#in_cases_of_automated_evaluations"/>
-        <Class IRI="#Holder"/>
+        <Class IRI="#Data_Owner"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#in_direct_marketing_cases"/>
@@ -15124,15 +15124,15 @@ For example, failure to process or implement a process in the transfer of inform
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#minor_infractions"/>
+        <Class IRI="#Data_Controller"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#minor_infractions"/>
+        <Class IRI="#Data_Processor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#minor_infractions"/>
         <Class IRI="#Personal_data_protection_authority"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#minor_infractions"/>
-        <Class IRI="#Responsible_for_treatment"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#minor_infractions"/>
-        <Class IRI="#Treatment_Manager"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#must_be"/>
@@ -15152,15 +15152,15 @@ For example, failure to process or implement a process in the transfer of inform
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#obligations"/>
-        <Class IRI="#Responsible_for_treatment"/>
+        <Class IRI="#Data_Controller"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#obligations"/>
-        <Class IRI="#Treatment_Manager"/>
+        <Class IRI="#Data_Processor"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#obtaining_personal_data_directly_by_the_owner"/>
-        <Class IRI="#Holder"/>
+        <Class IRI="#Data_Owner"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#principle_of_attachment_with_sanction_to_the_responsible_party_or_the_treatment_manager"/>
@@ -15224,15 +15224,15 @@ For example, failure to process or implement a process in the transfer of inform
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#serious_infractions"/>
+        <Class IRI="#Data_Controller"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#serious_infractions"/>
+        <Class IRI="#Data_Processor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#serious_infractions"/>
         <Class IRI="#Personal_data_protection_authority"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#serious_infractions"/>
-        <Class IRI="#Responsible_for_treatment"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#serious_infractions"/>
-        <Class IRI="#Treatment_Manager"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#shall_be"/>
@@ -15272,7 +15272,7 @@ For example, failure to process or implement a process in the transfer of inform
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#time_of_attention_within_days_for_the_right_of_correction_and_update"/>
-        <Class IRI="#Responsible_for_treatment"/>
+        <Class IRI="#Data_Controller"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#to_comply_with_quality_you_must"/>
@@ -17148,6 +17148,117 @@ For example, failure to process or implement a process in the transfer of inform
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>What rights do I have as the owner of my personal data?</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Q_26</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Data_Owner"/>
+                <Variable IRI="/h"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#count_with_the_following"/>
+                <Variable IRI="/h"/>
+                <Variable IRI="/cf"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Rights"/>
+                <Variable IRI="/rs"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#are_constituted_of"/>
+                <Variable IRI="/rs"/>
+                <Variable IRI="/aco"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="/aco"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>From what age can I give my explicit consent to the processing of my personal data?</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Q_23</Literal>
+        </Annotation>
+        <Body>
+            <DataPropertyAtom>
+                <DataProperty IRI="#can_give_explicit_consent_to_treatment"/>
+                <Variable IRI="/h"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Data_Owner"/>
+                <Variable IRI="/h"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="/h"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>When is a minor sanction by the data processor that is part of the company considered a minor sanction?</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Q_31</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Minor_infractions"/>
+                <Variable IRI="/mi"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Data_Processor"/>
+                <Variable IRI="/tm"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#committed_by"/>
+                <Variable IRI="/mi"/>
+                <Variable IRI="/tm"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#minor_infractions"/>
+                <Variable IRI="/tm"/>
+                <Variable IRI="/imi"/>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="/imi"/>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#limit">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
             <Literal>What are the principles on which the company&apos;s data processing is based?</Literal>
         </Annotation>
         <Annotation>
@@ -17313,75 +17424,6 @@ For example, failure to process or implement a process in the transfer of inform
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>What rights do I have as the owner of my personal data?</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Q_26</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Holder"/>
-                <Variable IRI="/h"/>
-            </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#count_with_the_following"/>
-                <Variable IRI="/h"/>
-                <Variable IRI="/cf"/>
-            </ObjectPropertyAtom>
-            <ClassAtom>
-                <Class IRI="#Rights"/>
-                <Variable IRI="/rs"/>
-            </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#are_constituted_of"/>
-                <Variable IRI="/rs"/>
-                <Variable IRI="/aco"/>
-            </ObjectPropertyAtom>
-        </Body>
-        <Head>
-            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
-                <Variable IRI="/aco"/>
-            </BuiltInAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>From what age can I give my explicit consent to the processing of my personal data?</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Q_23</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Holder"/>
-                <Variable IRI="/h"/>
-            </ClassAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#can_give_explicit_consent_to_treatment"/>
-                <Variable IRI="/h"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-            </DataPropertyAtom>
-        </Body>
-        <Head>
-            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
-                <Variable IRI="/h"/>
-            </BuiltInAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
             <Literal>Under what circumstances is the processing of data by the company not subject to the provisions established by the Organic Law on Personal Data Protection and what is the nature of each of these situations?</Literal>
         </Annotation>
         <Annotation>
@@ -17441,48 +17483,6 @@ For example, failure to process or implement a process in the transfer of inform
             </BuiltInAtom>
             <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#limit">
                 <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
-            </BuiltInAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>When is a minor sanction by the data processor that is part of the company considered a minor sanction?</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Q_31</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Minor_infractions"/>
-                <Variable IRI="/mi"/>
-            </ClassAtom>
-            <ClassAtom>
-                <Class IRI="#Treatment_Manager"/>
-                <Variable IRI="/tm"/>
-            </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#committed_by"/>
-                <Variable IRI="/mi"/>
-                <Variable IRI="/tm"/>
-            </ObjectPropertyAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#minor_infractions"/>
-                <Variable IRI="/tm"/>
-                <Variable IRI="/imi"/>
-            </DataPropertyAtom>
-        </Body>
-        <Head>
-            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
-                <Variable IRI="/imi"/>
-            </BuiltInAtom>
-            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#limit">
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
             </BuiltInAtom>
         </Head>
     </DLSafeRule>

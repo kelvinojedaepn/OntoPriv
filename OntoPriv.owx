@@ -2143,9 +2143,6 @@
         <NamedIndividual IRI="#Purpose"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#addressee"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#anonymization"/>
     </Declaration>
     <Declaration>
@@ -2194,13 +2191,16 @@
         <NamedIndividual IRI="#data_base"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#data_holder"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#data_or_database_of_criminal_infractions"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#data_owner"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#data_processing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#data_processor"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#data_types"/>
@@ -2215,7 +2215,7 @@
         <NamedIndividual IRI="#deceased_persons_data"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#delegate_for_personal_data_protection"/>
+        <NamedIndividual IRI="#delegate"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#disabled_owner_data"/>
@@ -2344,6 +2344,9 @@
         <NamedIndividual IRI="#recall_mechanisms"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#recipient"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#relevance_of_personal_data"/>
     </Declaration>
     <Declaration>
@@ -2423,9 +2426,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#transparency"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#treatment_manager"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#turnover"/>
@@ -3538,10 +3538,6 @@
         <NamedIndividual IRI="#Purpose"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Recipient"/>
-        <NamedIndividual IRI="#addressee"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Anonymization"/>
         <NamedIndividual IRI="#anonymization"/>
     </ClassAssertion>
@@ -3606,16 +3602,20 @@
         <NamedIndividual IRI="#data_base"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Data_Owner"/>
-        <NamedIndividual IRI="#data_holder"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Data_or_database_of_criminal_infractions"/>
         <NamedIndividual IRI="#data_or_database_of_criminal_infractions"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Data_Owner"/>
+        <NamedIndividual IRI="#data_owner"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Data_processing"/>
         <NamedIndividual IRI="#data_processing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Data_Processor"/>
+        <NamedIndividual IRI="#data_processor"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Data_types"/>
@@ -3635,7 +3635,7 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Delegate"/>
-        <NamedIndividual IRI="#delegate_for_personal_data_protection"/>
+        <NamedIndividual IRI="#delegate"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Disabled_owner_data"/>
@@ -3802,6 +3802,10 @@
         <NamedIndividual IRI="#recall_mechanisms"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Recipient"/>
+        <NamedIndividual IRI="#recipient"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Relevance"/>
         <NamedIndividual IRI="#relevance_of_personal_data"/>
     </ClassAssertion>
@@ -3908,10 +3912,6 @@
     <ClassAssertion>
         <Class IRI="#Transparency"/>
         <NamedIndividual IRI="#transparency"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Data_Processor"/>
-        <NamedIndividual IRI="#treatment_manager"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Turnover"/>
@@ -4369,17 +4369,17 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#are_composed_of"/>
         <NamedIndividual IRI="#Members_of_the_personal_data_protection_system"/>
-        <NamedIndividual IRI="#addressee"/>
+        <NamedIndividual IRI="#data_owner"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#are_composed_of"/>
         <NamedIndividual IRI="#Members_of_the_personal_data_protection_system"/>
-        <NamedIndividual IRI="#data_holder"/>
+        <NamedIndividual IRI="#data_processor"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#are_composed_of"/>
         <NamedIndividual IRI="#Members_of_the_personal_data_protection_system"/>
-        <NamedIndividual IRI="#delegate_for_personal_data_protection"/>
+        <NamedIndividual IRI="#delegate"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#are_composed_of"/>
@@ -4389,12 +4389,12 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#are_composed_of"/>
         <NamedIndividual IRI="#Members_of_the_personal_data_protection_system"/>
-        <NamedIndividual IRI="#responsible_for_treatment"/>
+        <NamedIndividual IRI="#recipient"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#are_composed_of"/>
         <NamedIndividual IRI="#Members_of_the_personal_data_protection_system"/>
-        <NamedIndividual IRI="#treatment_manager"/>
+        <NamedIndividual IRI="#responsible_for_treatment"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#is_distinct_from_data_collection_in_the"/>
@@ -4414,7 +4414,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#may_be_made_by"/>
         <NamedIndividual IRI="#claims"/>
-        <NamedIndividual IRI="#data_holder"/>
+        <NamedIndividual IRI="#data_owner"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#is_related_to"/>
@@ -4429,12 +4429,12 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#in_cases_of_direct_data_gathering_by_the"/>
         <NamedIndividual IRI="#consent"/>
-        <NamedIndividual IRI="#data_holder"/>
+        <NamedIndividual IRI="#data_owner"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#in_the_case_of_no_direct_data_collection_by_the"/>
         <NamedIndividual IRI="#consent"/>
-        <NamedIndividual IRI="#data_holder"/>
+        <NamedIndividual IRI="#data_owner"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#is_related_to"/>
@@ -4458,17 +4458,17 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#count_with_the_following"/>
-        <NamedIndividual IRI="#data_holder"/>
+        <NamedIndividual IRI="#data_owner"/>
         <NamedIndividual IRI="#rights"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#in_case_of_impugning_the_exaccuracy_of_data_a"/>
-        <NamedIndividual IRI="#data_holder"/>
+        <NamedIndividual IRI="#data_owner"/>
         <NamedIndividual IRI="#responsible_for_treatment"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#in_case_of_suspension_of_treatment_must_resort_to"/>
-        <NamedIndividual IRI="#data_holder"/>
+        <NamedIndividual IRI="#data_owner"/>
         <NamedIndividual IRI="#personal_data_protection_authority"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
@@ -4480,6 +4480,11 @@
         <ObjectProperty IRI="#is_based_on"/>
         <NamedIndividual IRI="#data_processing"/>
         <NamedIndividual IRI="#principios"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_related_to"/>
+        <NamedIndividual IRI="#data_processor"/>
+        <NamedIndividual IRI="#delegate"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#data_types_are_comprised_of"/>
@@ -4498,18 +4503,18 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#is_related_to"/>
-        <NamedIndividual IRI="#delegate_for_personal_data_protection"/>
+        <NamedIndividual IRI="#delegate"/>
         <NamedIndividual IRI="#personal_data_protection_authority"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#shall_be_observed_by"/>
-        <NamedIndividual IRI="#delegate_for_personal_data_protection"/>
-        <NamedIndividual IRI="#responsible_for_treatment"/>
+        <NamedIndividual IRI="#delegate"/>
+        <NamedIndividual IRI="#data_processor"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#shall_be_observed_by"/>
-        <NamedIndividual IRI="#delegate_for_personal_data_protection"/>
-        <NamedIndividual IRI="#treatment_manager"/>
+        <NamedIndividual IRI="#delegate"/>
+        <NamedIndividual IRI="#responsible_for_treatment"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#for"/>
@@ -4609,12 +4614,12 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#committed_by"/>
         <NamedIndividual IRI="#minor_infractions"/>
-        <NamedIndividual IRI="#responsible_for_treatment"/>
+        <NamedIndividual IRI="#data_processor"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#committed_by"/>
         <NamedIndividual IRI="#minor_infractions"/>
-        <NamedIndividual IRI="#treatment_manager"/>
+        <NamedIndividual IRI="#responsible_for_treatment"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#by"/>
@@ -4699,12 +4704,12 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#is_given_by"/>
         <NamedIndividual IRI="#personal_data_protection_seals"/>
-        <NamedIndividual IRI="#responsible_for_treatment"/>
+        <NamedIndividual IRI="#data_processor"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#is_given_by"/>
         <NamedIndividual IRI="#personal_data_protection_seals"/>
-        <NamedIndividual IRI="#treatment_manager"/>
+        <NamedIndividual IRI="#responsible_for_treatment"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#are_composed_of"/>
@@ -4809,7 +4814,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#is_related_to"/>
         <NamedIndividual IRI="#responsible_for_treatment"/>
-        <NamedIndividual IRI="#delegate_for_personal_data_protection"/>
+        <NamedIndividual IRI="#delegate"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#is_related_to"/>
@@ -4829,7 +4834,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#must_render_accounts_regarding_the_treatment_with"/>
         <NamedIndividual IRI="#responsible_for_treatment"/>
-        <NamedIndividual IRI="#data_holder"/>
+        <NamedIndividual IRI="#data_owner"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#must_render_accounts_regarding_the_treatment_with"/>
@@ -4849,7 +4854,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#for_the"/>
         <NamedIndividual IRI="#right_not_to_be_object_to_automated_evaluations"/>
-        <NamedIndividual IRI="#data_holder"/>
+        <NamedIndividual IRI="#data_owner"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#is_related_to"/>
@@ -4859,12 +4864,12 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#right_account_encumbered"/>
         <NamedIndividual IRI="#right_not_to_be_object_to_automated_evaluations"/>
-        <NamedIndividual IRI="#responsible_for_treatment"/>
+        <NamedIndividual IRI="#data_processor"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#right_account_encumbered"/>
         <NamedIndividual IRI="#right_not_to_be_object_to_automated_evaluations"/>
-        <NamedIndividual IRI="#treatment_manager"/>
+        <NamedIndividual IRI="#responsible_for_treatment"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#will_not_be_able_to_deal"/>
@@ -4914,12 +4919,12 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#right_account_encumbered"/>
         <NamedIndividual IRI="#right_to_suspension_of_treatment"/>
-        <NamedIndividual IRI="#responsible_for_treatment"/>
+        <NamedIndividual IRI="#data_processor"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#right_account_encumbered"/>
         <NamedIndividual IRI="#right_to_suspension_of_treatment"/>
-        <NamedIndividual IRI="#treatment_manager"/>
+        <NamedIndividual IRI="#responsible_for_treatment"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#are_constituted_of"/>
@@ -4989,17 +4994,22 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#responsible_for_implementing_safety_measures"/>
         <NamedIndividual IRI="#security"/>
-        <NamedIndividual IRI="#responsible_for_treatment"/>
+        <NamedIndividual IRI="#data_processor"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#responsible_for_implementing_safety_measures"/>
         <NamedIndividual IRI="#security"/>
-        <NamedIndividual IRI="#treatment_manager"/>
+        <NamedIndividual IRI="#responsible_for_treatment"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#shall_at_least_comply_with_the_minimum_with"/>
         <NamedIndividual IRI="#sensitive_data"/>
         <NamedIndividual IRI="#minimum_criteria"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#committed_by"/>
+        <NamedIndividual IRI="#serious_infractions"/>
+        <NamedIndividual IRI="#data_processor"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#committed_by"/>
@@ -5010,11 +5020,6 @@
         <ObjectProperty IRI="#committed_by"/>
         <NamedIndividual IRI="#serious_infractions"/>
         <NamedIndividual IRI="#responsible_for_treatment"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#committed_by"/>
-        <NamedIndividual IRI="#serious_infractions"/>
-        <NamedIndividual IRI="#treatment_manager"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#special_categories_of_personal_data_are_composed_of"/>
@@ -5115,11 +5120,6 @@
         <ObjectProperty IRI="#the_law_applies_in"/>
         <NamedIndividual IRI="#territorial_application"/>
         <NamedIndividual IRI="#location_of_the_personal_data_protection_system_members"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#is_related_to"/>
-        <NamedIndividual IRI="#treatment_manager"/>
-        <NamedIndividual IRI="#delegate_for_personal_data_protection"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#are_comprised_of"/>
@@ -7773,16 +7773,6 @@ For example, failure to process or implement a process in the transfer of inform
         <Literal>Legitimate, which means that they must be based on valid legal grounds and comply with data protection regulations.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#control_functions"/>
-        <NamedIndividual IRI="#addressee"/>
-        <Literal>Person who has been notified with personal data</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#type_of_person"/>
-        <NamedIndividual IRI="#addressee"/>
-        <Literal>Natural or Legal</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#description"/>
         <NamedIndividual IRI="#anonymization"/>
         <Literal>The implementation of measures to prevent the identification or re-identification of a natural person shall be carried out without incurring disproportionate efforts. This implies that privacy-preserving actions shall be taken without requiring excessive resources, time or effort that are not justified by the benefits or purpose pursued.</Literal>
@@ -8153,64 +8143,64 @@ For example, failure to process or implement a process in the transfer of inform
         <Literal>A structured data set encompasses any form, mode of creation, storage, organization, type of medium, treatment, processing, location or access, whether centralized, decentralized or distributed functionally or geographically.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#explanation_of_concept_of_inapplicability"/>
+        <NamedIndividual IRI="#data_or_database_of_criminal_infractions"/>
+        <Literal>Data or databases established for the prevention, investigation, detection or prosecution of criminal offenses or execution of criminal sanctions, carried out by the competent state agencies in compliance with their legal functions. In any of these cases, international human rights standards and the principles of this Law must be complied with, and at least the criteria of legality, proportionality and necessity must be met.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#cases_in_which_the_owner_should_be_informed"/>
-        <NamedIndividual IRI="#data_holder"/>
+        <NamedIndividual IRI="#data_owner"/>
         <Literal>When the personal data is not obtained directly from the owner</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#cases_in_which_the_owner_should_be_informed"/>
-        <NamedIndividual IRI="#data_holder"/>
+        <NamedIndividual IRI="#data_owner"/>
         <Literal>When the personal data were obtained from a source accessible to the public</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#control_functions"/>
-        <NamedIndividual IRI="#data_holder"/>
+        <NamedIndividual IRI="#data_owner"/>
         <Literal>Person whose data is processed</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#in_case_of_no_direct_obtaining_by_the_owner"/>
-        <NamedIndividual IRI="#data_holder"/>
+        <NamedIndividual IRI="#data_owner"/>
         <Literal>The holder shall be informed within thirty (30) days or at the time of the first communication with the holder.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#in_cases_of_automated_evaluations"/>
-        <NamedIndividual IRI="#data_holder"/>
+        <NamedIndividual IRI="#data_owner"/>
         <Literal>You may challenge automated decisions regarding the data subject&apos;s data before the data controller.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#in_cases_of_automated_evaluations"/>
-        <NamedIndividual IRI="#data_holder"/>
+        <NamedIndividual IRI="#data_owner"/>
         <Literal>You may request from the controller a detailed and reasoned explanation of the decision taken regarding the processing of your personal data.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#in_cases_of_automated_evaluations"/>
-        <NamedIndividual IRI="#data_holder"/>
+        <NamedIndividual IRI="#data_owner"/>
         <Literal>You may request from the data controller information on the types of data used and the source from which the data was obtained.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#in_cases_of_automated_evaluations"/>
-        <NamedIndividual IRI="#data_holder"/>
+        <NamedIndividual IRI="#data_owner"/>
         <Literal>You may request the evaluation criteria on the automated program.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#in_cases_of_automated_evaluations"/>
-        <NamedIndividual IRI="#data_holder"/>
+        <NamedIndividual IRI="#data_owner"/>
         <Literal>You may submit comments on the processing of your personal data.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#obtaining_personal_data_directly_by_the_owner"/>
-        <NamedIndividual IRI="#data_holder"/>
+        <NamedIndividual IRI="#data_owner"/>
         <Literal>Information on how such data will be used must be provided to the data subject prior to collection, i.e., at the time the personal data is requested or collected from the data subject.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#type_of_person"/>
-        <NamedIndividual IRI="#data_holder"/>
+        <NamedIndividual IRI="#data_owner"/>
         <Literal>Natural</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#explanation_of_concept_of_inapplicability"/>
-        <NamedIndividual IRI="#data_or_database_of_criminal_infractions"/>
-        <Literal>Data or databases established for the prevention, investigation, detection or prosecution of criminal offenses or execution of criminal sanctions, carried out by the competent state agencies in compliance with their legal functions. In any of these cases, international human rights standards and the principles of this Law must be complied with, and at least the criteria of legality, proportionality and necessity must be met.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#before_the_revocation_of_consent_is_considered_to_be_considered"/>
@@ -8313,6 +8303,186 @@ For example, failure to process or implement a process in the transfer of inform
         <Literal>The processing of personal data is carried out in any part of the national territory.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#control_functions"/>
+        <NamedIndividual IRI="#data_processor"/>
+        <Literal>Processor of personal data on behalf of and for the account of a controller of personal data</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#delegate_comments"/>
+        <NamedIndividual IRI="#data_processor"/>
+        <Literal>Ensure that the involvement of the personal data protection officer, in all matters relating to personal data protection, is appropriate and timely.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#delegate_comments"/>
+        <NamedIndividual IRI="#data_processor"/>
+        <Literal>Ensure that the personal data protection officer establishes direct communication with the highest executive and decision-making levels of the data processor.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#delegate_comments"/>
+        <NamedIndividual IRI="#data_processor"/>
+        <Literal>Facilitate access to the personal data of the processing operations, as well as all the resources and elements necessary to guarantee the correct and free performance of its functions.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#delegate_comments"/>
+        <NamedIndividual IRI="#data_processor"/>
+        <Literal>They may not dismiss or sanction the personal data protection officer for the proper performance of his or her duties.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#delegate_comments"/>
+        <NamedIndividual IRI="#data_processor"/>
+        <Literal>Train and update the personal data protection officer on the subject, in accordance with the technical regulations issued by the Personal Data Protection Authority.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minor_infractions"/>
+        <NamedIndividual IRI="#data_processor"/>
+        <Literal>Failure to allow or cooperate with audits or inspections carried out by the data controller or other auditor authorized by the Personal Data Protection Authority</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minor_infractions"/>
+        <NamedIndividual IRI="#data_processor"/>
+        <Literal>Failure to comply with the corrective measures ordered by the Personal Data Protection Authority.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minor_infractions"/>
+        <NamedIndividual IRI="#data_processor"/>
+        <Literal>Failure to cooperate with the data controller to enable the data controller to respond adequately to requests from data subjects</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minor_infractions"/>
+        <NamedIndividual IRI="#data_processor"/>
+        <Literal>Failure to provide the data controller with all the information necessary to comply with the obligations established by the Organic Law on Personal Data Protection and the corresponding regulations.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nature_of_the_entity"/>
+        <NamedIndividual IRI="#data_processor"/>
+        <Literal>Public or Private</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#obligations"/>
+        <NamedIndividual IRI="#data_processor"/>
+        <Literal>Allowing audits and inspections by accredited auditors</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#obligations"/>
+        <NamedIndividual IRI="#data_processor"/>
+        <Literal>Comply with any other obligation established by applicable regulations or other Ecuadorian laws.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#obligations"/>
+        <NamedIndividual IRI="#data_processor"/>
+        <Literal>Conduct security adequacy assessments prior to the processing of personal data.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#obligations"/>
+        <NamedIndividual IRI="#data_processor"/>
+        <Literal>Designate a Data Protection Officer when necessary.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#obligations"/>
+        <NamedIndividual IRI="#data_processor"/>
+        <Literal>Develop customized data protection policies</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#obligations"/>
+        <NamedIndividual IRI="#data_processor"/>
+        <Literal>Ensure that data processors comply with regulations and best practices.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#obligations"/>
+        <NamedIndividual IRI="#data_processor"/>
+        <Literal>Establish confidentiality agreements with personnel and data controllers.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#obligations"/>
+        <NamedIndividual IRI="#data_processor"/>
+        <Literal>Implement administrative, technical and legal measures to guarantee the proper treatment of data</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#obligations"/>
+        <NamedIndividual IRI="#data_processor"/>
+        <Literal>Maintain the National Registry of Personal Data Protection up to date.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#obligations"/>
+        <NamedIndividual IRI="#data_processor"/>
+        <Literal>Notifying the Personal Data Protection Authority and the data owner of violations of the security measures implemented for the processing of personal data in accordance with the procedure established for this purpose.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#obligations"/>
+        <NamedIndividual IRI="#data_processor"/>
+        <Literal>Periodically evaluate the effectiveness of the administrative, technical and legal measures adopted.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#obligations"/>
+        <NamedIndividual IRI="#data_processor"/>
+        <Literal>Take the necessary technological, physical, administrative, organizational and legal measures to prevent, deter, reduce, mitigate and control identified risks and breaches.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#obligations"/>
+        <NamedIndividual IRI="#data_processor"/>
+        <Literal>Treat personal data in accordance with the Organic Law on Personal Data Protection and relevant regulations.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#obligations"/>
+        <NamedIndividual IRI="#data_processor"/>
+        <Literal>Use risk analysis and management methodologies adapted to the particularities of data processing and the parties involved.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#serious_infractions"/>
+        <NamedIndividual IRI="#data_processor"/>
+        <Literal>Failure to comply with corrective measures or partial or defective compliance with them, provided that a sanction for a minor infraction has been applied beforehand for this reason.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#serious_infractions"/>
+        <NamedIndividual IRI="#data_processor"/>
+        <Literal>Failure to implement mechanisms designed to maintain the confidentiality, integrity, availability and resilience of personal data</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#serious_infractions"/>
+        <NamedIndividual IRI="#data_processor"/>
+        <Literal>Failure to implement preventive and corrective measures in the security of personal data in order to avoid violations.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#serious_infractions"/>
+        <NamedIndividual IRI="#data_processor"/>
+        <Literal>Failure to notify the data controller of any breach of security of personal data in accordance with the Organic Law on Personal Data Protection or with unjustified delay.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#serious_infractions"/>
+        <NamedIndividual IRI="#data_processor"/>
+        <Literal>Failure to process personal data in accordance with the provisions of the contract with the data controller</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#serious_infractions"/>
+        <NamedIndividual IRI="#data_processor"/>
+        <Literal>Failure to sign contracts containing confidentiality and appropriate treatment of personal data clauses with the personnel in charge of the treatment of personal data or whoever has knowledge of the personal data.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#serious_infractions"/>
+        <NamedIndividual IRI="#data_processor"/>
+        <Literal>Not to delete the personal data transferred or communicated to the person in charge of the processing of personal data, once its assignment has been completed.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#serious_infractions"/>
+        <NamedIndividual IRI="#data_processor"/>
+        <Literal>Processing personal data without respecting the principles and rights established in the Organic Law for the Protection of Personal Data, its regulations and the rules issued by the Authority for the Protection of Personal Data.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type_authority"/>
+        <NamedIndividual IRI="#data_processor"/>
+        <Literal>Public</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type_of_organism_participation"/>
+        <NamedIndividual IRI="#data_processor"/>
+        <Literal>Alone or together with others</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type_of_person"/>
+        <NamedIndividual IRI="#data_processor"/>
+        <Literal>Natural or Legal</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#description"/>
         <NamedIndividual IRI="#data_types"/>
         <Literal>Within the Organic Law for the Protection of Personal Data, different types of data are classified and classified as follows</Literal>
@@ -8329,72 +8499,72 @@ For example, failure to process or implement a process in the transfer of inform
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#a_data_protection_delegate_will_be_assigned"/>
-        <NamedIndividual IRI="#delegate_for_personal_data_protection"/>
+        <NamedIndividual IRI="#delegate"/>
         <Literal>When it refers to the large-scale processing of special categories of data, in accordance with the provisions of the regulations of the Organic Law on Personal Data Protection.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#a_data_protection_delegate_will_be_assigned"/>
-        <NamedIndividual IRI="#delegate_for_personal_data_protection"/>
+        <NamedIndividual IRI="#delegate"/>
         <Literal>When the activities of the person responsible for or in charge of the processing of personal data require a permanent and systematized control due to the volume, nature, scope or purposes of the processing, as established in the Organic Law for the Protection of Personal Data or in the regulations issued by the Authority for the Protection of Personal Data.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#a_data_protection_delegate_will_be_assigned"/>
-        <NamedIndividual IRI="#delegate_for_personal_data_protection"/>
+        <NamedIndividual IRI="#delegate"/>
         <Literal>When the data processing is not related to national security or defense of the State, and does not involve classified or confidential information as stipulated in the specialized laws in this area.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#a_data_protection_delegate_will_be_assigned"/>
-        <NamedIndividual IRI="#delegate_for_personal_data_protection"/>
+        <NamedIndividual IRI="#delegate"/>
         <Literal>When the treatment is carried out by those who make up the public sector in accordance with Article 225 of the Constitution of the Republic.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#contact_data"/>
-        <NamedIndividual IRI="#delegate_for_personal_data_protection"/>
+        <NamedIndividual IRI="#delegate"/>
         <Literal>E-mail address</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#contact_data"/>
-        <NamedIndividual IRI="#delegate_for_personal_data_protection"/>
+        <NamedIndividual IRI="#delegate"/>
         <Literal>Home address</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#contact_data"/>
-        <NamedIndividual IRI="#delegate_for_personal_data_protection"/>
+        <NamedIndividual IRI="#delegate"/>
         <Literal>Names and surnames</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#contact_data"/>
-        <NamedIndividual IRI="#delegate_for_personal_data_protection"/>
+        <NamedIndividual IRI="#delegate"/>
         <Literal>Telephone number</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#control_functions"/>
-        <NamedIndividual IRI="#delegate_for_personal_data_protection"/>
+        <NamedIndividual IRI="#delegate"/>
         <Literal>Advise on risk analysis, impact assessment and evaluation of security measures, and supervise their implementation.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#control_functions"/>
-        <NamedIndividual IRI="#delegate_for_personal_data_protection"/>
+        <NamedIndividual IRI="#delegate"/>
         <Literal>Advise the responsible party, the personnel of the responsible party and the person in charge of the processing of personal data, on the provisions contained in the Organic Law for the Protection of Personal Data, the regulations, directives, guidelines and other regulations issued by the Authority for the Protection of Personal Data.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#control_functions"/>
-        <NamedIndividual IRI="#delegate_for_personal_data_protection"/>
+        <NamedIndividual IRI="#delegate"/>
         <Literal>Cooperate with the Personal Data Protection Authority and act as a point of contact with such entity, in relation to issues concerning the processing of personal data.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#control_functions"/>
-        <NamedIndividual IRI="#delegate_for_personal_data_protection"/>
+        <NamedIndividual IRI="#delegate"/>
         <Literal>Perform such other functions as the Personal Data Protection Authority may assign, especially in the case of special categories of personal data.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#control_functions"/>
-        <NamedIndividual IRI="#delegate_for_personal_data_protection"/>
+        <NamedIndividual IRI="#delegate"/>
         <Literal>Supervise compliance with the provisions contained in the Personal Data Protection Law and the regulations, directives, guidelines and other regulations issued by the Personal Data Protection Authority.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#type_of_person"/>
-        <NamedIndividual IRI="#delegate_for_personal_data_protection"/>
+        <NamedIndividual IRI="#delegate"/>
         <Literal>Natural</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
@@ -9163,6 +9333,16 @@ For example, failure to process or implement a process in the transfer of inform
         <Literal>Free of charge, which implies that the consent revocation process should not generate additional costs for the data subject.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#control_functions"/>
+        <NamedIndividual IRI="#recipient"/>
+        <Literal>Person who has been notified with personal data</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type_of_person"/>
+        <NamedIndividual IRI="#recipient"/>
+        <Literal>Natural or Legal</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#description"/>
         <NamedIndividual IRI="#relevance_of_personal_data"/>
         <Literal>That the data collected must be relevant and directly related to the specific purpose for which it is collected.</Literal>
@@ -9780,22 +9960,22 @@ For example, failure to process or implement a process in the transfer of inform
     <DataPropertyAssertion>
         <DataProperty IRI="#description_responsible_for_channeling_exercise_of_rights"/>
         <NamedIndividual IRI="#rights"/>
-        <Literal>Implica la consideración de los individuos encargados de garantizar que los derechos del titular sean ejercidos adecuadamente</Literal>
+        <Literal>It involves consideration of the individuals responsible for ensuring that the rights of the holder are properly exercised.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#irrevocability"/>
         <NamedIndividual IRI="#rights"/>
-        <Literal>Los derechos del titular son intransferibles y no pueden ser renunciados, por lo que, cualquier cláusula o disposición que contradiga esto será considerada nula</Literal>
+        <Literal>The holder&apos;s rights are non-transferable and cannot be waived; therefore, any clause or provision that contradicts this will be considered null and void.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#limitation_on_exercise_of_rights_by_secondary_laws"/>
         <NamedIndividual IRI="#rights"/>
-        <Literal>Regulaciones o normativas complementarias a la Ley de Protección de Datos Personales no pueden restringir o limitar los derechos del titular</Literal>
+        <Literal>Regulations or rules complementary to the Personal Data Protection Law may not restrict or limit the rights of the owner.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#responsible_for_channeling_the_exercise_of_rights"/>
         <NamedIndividual IRI="#rights"/>
-        <Literal>Jueces compotenentes en conformidad con el procedimiento establecido en la Ley Orgánica de Protección Datos Personales</Literal>
+        <Literal>Competent judges in accordance with the procedure established in the Organic Law on Personal Data Protection.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#mechanisms_to_secure_the_right_of_access_of_the_credit_data_holder"/>
@@ -10096,186 +10276,6 @@ For example, failure to process or implement a process in the transfer of inform
         <DataProperty IRI="#description"/>
         <NamedIndividual IRI="#transparency"/>
         <Literal>The processing of personal data must be transparent, therefore, all information on this process must be easily accessible and understandable, using simple and clear language.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#control_functions"/>
-        <NamedIndividual IRI="#treatment_manager"/>
-        <Literal>Processor of personal data on behalf of and for the account of a controller of personal data</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#delegate_comments"/>
-        <NamedIndividual IRI="#treatment_manager"/>
-        <Literal>Ensure that the involvement of the personal data protection officer, in all matters relating to personal data protection, is appropriate and timely.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#delegate_comments"/>
-        <NamedIndividual IRI="#treatment_manager"/>
-        <Literal>Ensure that the personal data protection officer establishes direct communication with the highest executive and decision-making levels of the data processor.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#delegate_comments"/>
-        <NamedIndividual IRI="#treatment_manager"/>
-        <Literal>Facilitate access to the personal data of the processing operations, as well as all the resources and elements necessary to guarantee the correct and free performance of its functions.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#delegate_comments"/>
-        <NamedIndividual IRI="#treatment_manager"/>
-        <Literal>They may not dismiss or sanction the personal data protection officer for the proper performance of his or her duties.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#delegate_comments"/>
-        <NamedIndividual IRI="#treatment_manager"/>
-        <Literal>Train and update the personal data protection officer on the subject, in accordance with the technical regulations issued by the Personal Data Protection Authority.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#minor_infractions"/>
-        <NamedIndividual IRI="#treatment_manager"/>
-        <Literal>Failure to allow or cooperate with audits or inspections carried out by the data controller or other auditor authorized by the Personal Data Protection Authority</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#minor_infractions"/>
-        <NamedIndividual IRI="#treatment_manager"/>
-        <Literal>Failure to comply with the corrective measures ordered by the Personal Data Protection Authority.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#minor_infractions"/>
-        <NamedIndividual IRI="#treatment_manager"/>
-        <Literal>Failure to cooperate with the data controller to enable the data controller to respond adequately to requests from data subjects</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#minor_infractions"/>
-        <NamedIndividual IRI="#treatment_manager"/>
-        <Literal>Failure to provide the data controller with all the information necessary to comply with the obligations established by the Organic Law on Personal Data Protection and the corresponding regulations.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#nature_of_the_entity"/>
-        <NamedIndividual IRI="#treatment_manager"/>
-        <Literal>Public or Private</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#obligations"/>
-        <NamedIndividual IRI="#treatment_manager"/>
-        <Literal>Allowing audits and inspections by accredited auditors</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#obligations"/>
-        <NamedIndividual IRI="#treatment_manager"/>
-        <Literal>Comply with any other obligation established by applicable regulations or other Ecuadorian laws.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#obligations"/>
-        <NamedIndividual IRI="#treatment_manager"/>
-        <Literal>Conduct security adequacy assessments prior to the processing of personal data.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#obligations"/>
-        <NamedIndividual IRI="#treatment_manager"/>
-        <Literal>Designate a Data Protection Officer when necessary.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#obligations"/>
-        <NamedIndividual IRI="#treatment_manager"/>
-        <Literal>Develop customized data protection policies</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#obligations"/>
-        <NamedIndividual IRI="#treatment_manager"/>
-        <Literal>Ensure that data processors comply with regulations and best practices.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#obligations"/>
-        <NamedIndividual IRI="#treatment_manager"/>
-        <Literal>Establish confidentiality agreements with personnel and data controllers.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#obligations"/>
-        <NamedIndividual IRI="#treatment_manager"/>
-        <Literal>Implement administrative, technical and legal measures to guarantee the proper treatment of data</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#obligations"/>
-        <NamedIndividual IRI="#treatment_manager"/>
-        <Literal>Maintain the National Registry of Personal Data Protection up to date.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#obligations"/>
-        <NamedIndividual IRI="#treatment_manager"/>
-        <Literal>Notifying the Personal Data Protection Authority and the data owner of violations of the security measures implemented for the processing of personal data in accordance with the procedure established for this purpose.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#obligations"/>
-        <NamedIndividual IRI="#treatment_manager"/>
-        <Literal>Periodically evaluate the effectiveness of the administrative, technical and legal measures adopted.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#obligations"/>
-        <NamedIndividual IRI="#treatment_manager"/>
-        <Literal>Take the necessary technological, physical, administrative, organizational and legal measures to prevent, deter, reduce, mitigate and control identified risks and breaches.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#obligations"/>
-        <NamedIndividual IRI="#treatment_manager"/>
-        <Literal>Treat personal data in accordance with the Organic Law on Personal Data Protection and relevant regulations.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#obligations"/>
-        <NamedIndividual IRI="#treatment_manager"/>
-        <Literal>Use risk analysis and management methodologies adapted to the particularities of data processing and the parties involved.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#serious_infractions"/>
-        <NamedIndividual IRI="#treatment_manager"/>
-        <Literal>Failure to comply with corrective measures or partial or defective compliance with them, provided that a sanction for a minor infraction has been applied beforehand for this reason.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#serious_infractions"/>
-        <NamedIndividual IRI="#treatment_manager"/>
-        <Literal>Failure to implement mechanisms designed to maintain the confidentiality, integrity, availability and resilience of personal data</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#serious_infractions"/>
-        <NamedIndividual IRI="#treatment_manager"/>
-        <Literal>Failure to implement preventive and corrective measures in the security of personal data in order to avoid violations.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#serious_infractions"/>
-        <NamedIndividual IRI="#treatment_manager"/>
-        <Literal>Failure to notify the data controller of any breach of security of personal data in accordance with the Organic Law on Personal Data Protection or with unjustified delay.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#serious_infractions"/>
-        <NamedIndividual IRI="#treatment_manager"/>
-        <Literal>Failure to process personal data in accordance with the provisions of the contract with the data controller</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#serious_infractions"/>
-        <NamedIndividual IRI="#treatment_manager"/>
-        <Literal>Failure to sign contracts containing confidentiality and appropriate treatment of personal data clauses with the personnel in charge of the treatment of personal data or whoever has knowledge of the personal data.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#serious_infractions"/>
-        <NamedIndividual IRI="#treatment_manager"/>
-        <Literal>Not to delete the personal data transferred or communicated to the person in charge of the processing of personal data, once its assignment has been completed.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#serious_infractions"/>
-        <NamedIndividual IRI="#treatment_manager"/>
-        <Literal>Processing personal data without respecting the principles and rights established in the Organic Law for the Protection of Personal Data, its regulations and the rules issued by the Authority for the Protection of Personal Data.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#type_authority"/>
-        <NamedIndividual IRI="#treatment_manager"/>
-        <Literal>Public</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#type_of_organism_participation"/>
-        <NamedIndividual IRI="#treatment_manager"/>
-        <Literal>Alone or together with others</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#type_of_person"/>
-        <NamedIndividual IRI="#treatment_manager"/>
-        <Literal>Natural or Legal</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#description"/>

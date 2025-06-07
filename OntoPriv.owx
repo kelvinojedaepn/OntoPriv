@@ -3345,6 +3345,14 @@
         <Class IRI="#Independence_of_control"/>
         <Class IRI="#Transparency"/>
     </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Purpose"/>
+        <Class IRI="#Security"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Recipient"/>
+        <Class IRI="#Security"/>
+    </DisjointClasses>
     <ClassAssertion>
         <Class IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#Right_of_access_in_verification"/>
         <NamedIndividual IRI="http://www.semanticweb.org/franc/ontologies/2023/9/OntologiaLOPDP#access_right001"/>
